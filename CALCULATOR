@@ -1,0 +1,28 @@
+print("\T CALCULATOR \n\n")
+
+def add(x,y):
+    return x + y
+
+def sub(x,y):
+    return x - y
+
+def mul(x,y):
+    return x * y
+
+def div(x,y):
+    return x / y
+
+x = int(input("Enter a number: "))
+y = int(input("Enter a number: "))
+op = input("Enter operator: ")
+    
+if op == '+':
+    print("The answer is " + str(add(x,y)))
+elif op == '-':
+    print("The answer is " + str(sub(x,y)))
+elif op == '*':
+    print("The answer is " + str(mul(x,y)))
+elif op == '/':
+    print("The answer is " + str(div(x,y)))
+else:
+    print("Invalid operator!")
